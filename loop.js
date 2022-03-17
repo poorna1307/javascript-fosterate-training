@@ -20,7 +20,8 @@ while(while_i<5){
     console.log(loop_lis[while_i])
     while_i++
 }
-let while_i1=0
+let while_ii=0
 do{
-    console.log(loop_lis[while_i1])
-}while(while_i1<5);
+    console.log(loop_lis[while_ii])
+    while_ii++
+}while(while_ii<5);
