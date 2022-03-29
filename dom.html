@@ -6,13 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body  >
     <h1>Finding HTMl elemnet by id</h1>
     <h1 id="intro">Poorna</h1>
     <h2 id="intro2"></h2>
+    <h1>Chander</h1>
+    <h3 id="intro3"></h3>
+    <p class="intro4">Hello every one..!</p>
+    <p class="intro4">how are you..</p>
+    <p class="intro5"></p>
+    <form id=""></form>
     <script>
+        //getting html elements by id
         const element1 = document.getElementById("intro");
-document.getElementById("intro2").innerHTML = element1.innerHTML+"Chander";
+        document.getElementById("intro2").innerHTML = element1.innerHTML+"Chander";
+        //getting html elements by tagname
+        const dom_e=document.getElementsByTagName("h1")
+        document.getElementById("intro3").innerHTML=dom_e[1].innerHTML+dom_e[2].innerHTML;
+        //getting html elements by queryselectorall
+        const dom_q=document.querySelectorAll("p.intro4");
+        document.querySelector("p.intro5").innerHTML=dom_q[0].innerHTML+dom_q[1].innerHTML;
     </script>
 </body>
 </html>
