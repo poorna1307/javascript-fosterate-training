@@ -15,7 +15,14 @@
     <p class="intro4">Hello every one..!</p>
     <p class="intro4">how are you..</p>
     <p class="intro5"></p>
-    <form id=""></form>
+    <!--modifying css attritubes using events-->
+    <h1 id="intro6">My Heading 1</h1>
+    <button type="button"onclick="document.getElementById('intro6').style.color = 'red'">Click Me!</button>
+    <!--on-click event on text data-->
+    <h2 onclick="this.innerHTML='How are You..?'">Click on this text!</h2>
+    <p>Click the button to display the date.</p>
+    <button onclick="displayDate()">The time is?</button>
+    <p id="intro7"></p>
     <script>
         //getting html elements by id
         const element1 = document.getElementById("intro");
@@ -26,6 +33,9 @@
         //getting html elements by queryselectorall
         const dom_q=document.querySelectorAll("p.intro4");
         document.querySelector("p.intro5").innerHTML=dom_q[0].innerHTML+dom_q[1].innerHTML;
+        function displayDate() {
+        document.getElementById("intro7").innerHTML = Date();
+    } 
     </script>
 </body>
 </html>
